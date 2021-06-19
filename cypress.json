@@ -1,0 +1,4 @@
+{
+    "testFiles": "test/integration/text.js",
+    "componentFolder": "."
+}

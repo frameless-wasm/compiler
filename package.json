@@ -4,14 +4,14 @@
   "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
-    "karma": "^6.3.4",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-firefox-launcher": "^2.1.1",
-    "karma-jasmine": "^4.0.1"
+    "@cypress/mount-utils": "^1.0.2",
+    "@cypress/vite-dev-server": "^2.0.1",
+    "cypress": "^7.5.0",
+    "vite": "^2.3.7"
   },
   "scripts": {
-    "test": "cabal v2-build && karma start karma.conf.js",
-    "test:watch": "cabal v2-build && karma start karma.conf.js --no-single-run --auto-watch"
+    "test": "cabal v2-build && yarn cypress run-ct",
+    "test:watch": "cabal v2-build && yarn cypress open-ct"
   },
   "repository": {
     "type": "git",
